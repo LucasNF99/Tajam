@@ -1,5 +1,3 @@
-# jigsaw-static-page
+# Projeto feito com HTML5,Stylus,JavaScript
 
----
-npm run watch rodar
----
+
