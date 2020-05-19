@@ -1,0 +1,117 @@
+.s-about-us{
+  background-image: url('../images/background-03.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+
+  .flickity-page-dots {
+    position: relative;
+    vertical-align: middle;
+    padding-top: 45px;
+    display: block;
+    width: 100%;
+    max-width: 395px;
+    margin: 20px auto;
+    justify-content: space-between;
+    vertical-align: bottom;
+    list-style: none;
+    align-items: center;
+  }
+  @for $i from 1 through 6 {
+    .flickity-page-dots .dot:nth-child(#{$i}) {
+      bottom: 0px;
+      background-image: url(../images/people#{$i}.png);
+      vertical-align: middle;
+      display: inline-block;
+      margin-right: 10px;
+      width: 45px;
+      height: 45px;
+      opacity: 1;
+    }
+  }
+  /* fill-in selected dot */
+  .flickity-page-dots .dot.is-selected {
+    transform: scale(1.7);
+  }
+  
+  .flickity-page-dots::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: solid #9f9f9f;
+    border-width: 3px 3px 0px 0;
+    transform: rotate(45deg);
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 58%;
+    cursor: pointer;
+  }
+  
+  .flickity-page-dots::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: solid #9f9f9f;
+    border-width: 0px 0px 3px 3px;
+    transform: rotate(45deg);
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 58%;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 370px) { 
+    .flickity-page-dots .dot.is-selected {
+      transform: scale(1.4);
+    }
+  
+    @for $i from 1 through 6 {
+      .flickity-page-dots .dot:nth-child(#{$i}) {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    .flickity-viewport{
+      height: 260px !important;
+    }
+  }
+}
+
+.c-about-us_title {
+  text-align: center;
+  font-size: 100px;
+  padding-bottom: 0px;
+  margin: 0;
+  line-height: 50px;
+}
+
+.o-about-us_text {
+  text-align: center;
+  padding-bottom: 55px;
+}
+
+
+.o-about-us_general-info {
+  width: 100%;
+  height: 200px; 
+  margin-right: 10px;
+}
+
+.o-about-us_role {
+  font-size: 13px;
+}
+
+@media screen and (max-width: 768px) { 
+  .o-about-us_text {
+    padding-bottom: 0px;
+  }
+
+
+}

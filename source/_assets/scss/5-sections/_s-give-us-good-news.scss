@@ -1,0 +1,87 @@
+.s-give-us-good-news {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+.c-give-us-good-news_fs{
+  display: inline-block;
+}
+.c-give-us-good-news_ss{
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 70px;
+}
+.give-us-good-news_title {
+  padding-bottom: 35px;
+  display: block;
+  color: #413d4b;
+}
+.c-form {
+  max-width: 460px;
+  width: 100%;
+  display: inline-block;
+  text-align: left;
+}
+
+.give-us_btn {
+  position: relative;
+  width: 100%;
+}
+
+.form_item {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 44px;
+  box-sizing: border-box;
+  padding-left: 20px;
+}
+
+.text-area {
+  resize: none;
+  max-width: 470px;
+  width: 100%;
+  height: 200px;
+}
+
+
+.o-list-marc_title {
+  display: block;
+  color: #413d4b;
+}
+
+.c-list-marc {
+  max-width: 385px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+.o-list-marc_item {
+  padding-bottom: 42px;
+  padding-right: 20px;
+  max-width: 174px;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) { 
+  .s-give-us-good-news {
+    text-align: center;
+  }
+
+  .c-give-us-good-news_ss {
+    padding-left: 0;
+  }
+
+  .o-list-marc_item {
+
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 367px) { 
+  .o-list-marc_item {
+    max-width: unset;
+    width: 100%;
+  }
+}

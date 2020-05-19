@@ -1,0 +1,21 @@
+.o-btn {
+  border: 1px solid #00e0d0;
+  background: transparent;
+  color: #00e0d0;
+  font-weight: bold;
+  padding: 13px 25px;
+  max-width: 138px;
+  cursor: pointer;
+  transition: 0.5s;
+  font-family: $btn-font;
+  letter-spacing: 1px;
+}
+
+.hbtn {
+  margin-bottom: 205px;
+}
+
+.o-btn:hover {
+  box-shadow: 3px 3px 1px #00e0d0; ;
+}
+

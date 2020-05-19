@@ -1,0 +1,140 @@
+.s-expertise {
+  padding-bottom: 105px;
+  padding-top: 70px;
+}
+
+.o-expertise_title {
+  text-align: center;
+  color:#413d4b
+}
+
+
+.o-expertise_sub-title {
+  text-align: center;
+  position: relative;
+  margin-bottom: 46px;
+  padding-bottom: 20px;
+  color: #a1a0a4;
+  font-family: $font-family-text;
+  font-size: 14px;
+}
+
+.o-expertise_sub-title::after{
+  position: absolute;
+  width: 50px;
+  height: 1px;
+  display: block;
+  content:"";
+  right: 50%;
+  bottom: 0;
+  transform: translate(50%);
+  background-color: #c6c4c9;
+  font-family: $font-family-title;
+  font-size: 14px;
+}
+
+
+.c-grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.o-grid-container_item {
+  position: relative;
+  max-width: 275px;
+  width: 100%;
+  padding-top: 61px;
+  padding-bottom: 5px;
+  padding-right: 31px;
+  padding-left: 31px;
+}
+
+.o-gitd-container_title {
+  font-size: 14px;
+  text-align: center;
+  color: #413d4b;
+  font-family: $font-family-text;
+  font-weight: $font-weight-black;
+}
+
+.o-grid-container_text {
+  font-size: 14px;
+  text-align: center;
+  color: #717171;
+  font-family: $font-family-text;
+}
+
+.o-grid-container_item::before {
+  position: absolute;
+  content: '';
+  display: block;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%);
+}
+
+.o-grid-container_item:nth-child(1) {
+  border-right: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+.o-grid-container_item:nth-child(2) {
+  border-right: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+.o-grid-container_item:nth-child(3) {
+  border-bottom: 1px solid #ebebeb;
+}
+.o-grid-container_item:nth-child(4) {
+  border-right: 1px solid #ebebeb;
+}
+.o-grid-container_item:nth-child(5) {
+  border-right: 1px solid #ebebeb;
+}
+
+@for $i from 4 through 6 {
+  .o-grid-container_item:nth-child(#{$i})::before{
+    top: 15px;
+  }
+}
+@for $i from 1 through 6 {
+  .o-grid-container_item:nth-child(#{$i})::before {
+    background-image: url(../images/l#{$i}.png);
+  }
+}
+@media screen and (max-width: 854px) { 
+  @for $i from 1 through 6 {
+    .o-grid-container_item:nth-child(#{$i}){
+      border-bottom: 1px solid #ebebeb;
+      margin-bottom: 10px;
+    }
+  }
+  .o-grid-container_item:nth-child(3) {
+    border-right: 1px solid #ebebeb;
+  }
+  .o-grid-container_item:nth-child(2) {
+    border-right: none;
+  }
+  .o-grid-container_item:nth-child(4) {
+    border-right: none;
+  }
+  .o-grid-container_item:nth-child(5) {
+    border-bottom: none;
+  }
+
+  .o-grid-container_item:nth-child(6) {
+    border-bottom: none;
+  }
+
+  @media screen and (max-width: 569px) { 
+    @for $i from 1 through 6 {
+      .o-grid-container_item:nth-child(#{$i}){
+        border-bottom: 1px solid #ebebeb;
+        border-right: none;
+      }
+    }
+  }
+}

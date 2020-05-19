@@ -1,0 +1,61 @@
+.s-header {
+  background-image: url('../images/background-01.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+  
+  .flickity-page-dots {
+    bottom: -130px;
+  }
+  
+  .flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: transparent;
+    border: 1px solid white;
+  }
+  
+  .flickity-page-dots .dot.is-selected {
+    background: #00e0d0;
+    border-color: #00e0d0;
+  }
+  
+}
+
+.c-header_title {
+  padding-top: 220px;
+  padding-bottom: 25px;
+  margin: 0 auto;
+  position: relative;
+  font-size: 32px;
+  font-family: $font-family-title;
+  font-weight: $font-weight-black;
+}
+
+.c-header_title::after{
+  position: absolute;
+  width: 50px;
+  height: 1px;
+  display: block;
+  content:"";
+  right: 50%;
+  bottom: 0;
+  transform: translate(50%);
+  background-color: #00e0d0;
+}
+.c-header_carousel {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.o-header_text {
+  width: 100%; /* full width */
+  height: 160px; /* height of carousel */
+  margin-right: 10px;
+  font-family: $font-family-text;
+  font-size: 14px;
+}

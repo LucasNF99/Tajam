@@ -1,0 +1,89 @@
+.s-meet-our-amazing-team {
+  background-image: url('../images/background-03.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 70px;
+}
+
+.s-meet-our-amazing-team_title {
+  padding-top: 70px;
+}
+
+.s-meet-our-amazing-team_sub-title {
+  margin-bottom: 70px;
+  padding-bottom: 20px;
+  position:relative;
+  font-family: $font-family-text;
+  font-size: 14px;
+}
+
+.s-meet-our-amazing-team_sub-title::after {
+  position: absolute;
+  width: 50px;
+  height: 1px;
+  display: block;
+  content:"";
+  right: 50%;
+  bottom: 0;
+  transform: translate(50%);
+  background-color: #655c80;
+}
+
+.main-carousel {
+  display: flex;
+  max-width: 940px;
+  width: 100%;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding-bottom: 70px;
+}
+
+.o-main-carrousel_title {
+  font-family: $font-family-text;
+  font-weight: $font-weight-black;
+  font-size: 14px;
+}
+
+.o-main-carrousel_text {
+  font-family: $font-family-text;
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+.carousel-cell {
+  border: 1px solid #827e96;
+  max-width: 220px;
+  width: 100%;
+  height: 310px;
+  overflow: hidden;
+  flex-direction: row;
+  transition: 0.5s;
+}
+
+.carousel-cell:hover {
+  transform: scale(1.1);
+}
+
+.meeet-our_btn {
+  text-decoration: none;
+  display: block;
+  font-size: 13px;
+  margin: 0 auto;
+  padding: 13px !important;
+}
+.main-carousel:after {
+  content: '';
+}
+
+@media screen and ( max-width: 768px ) {
+  .main-carousel {
+    display: inline-block;
+  }
+  .main-carousel:after {
+    content: 'flickity';
+    display: none; /* hide :after */
+  }
+}

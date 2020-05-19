@@ -1,0 +1,31 @@
+.s-what-our-story {
+  background-image: url('../images/watch-story.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 70px;
+  height: 500px;
+  position: relative;
+}
+.btn-img{
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  position: relative;
+}
+
+.play-pouse-btn {
+  background: transparent;
+  border: none;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  transition: 4.5s;
+}
+.c-wt-our-story_vd {
+  opacity: 0;
+  transition: 3s;
+}

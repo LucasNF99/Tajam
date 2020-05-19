@@ -1,0 +1,45 @@
+.s-our-story::before {
+  position: absolute;
+  background-image: url('../images/our-story.png');
+  width: 238px;
+  height: 299px;
+  display: block;
+  content:"";
+  background-repeat: no-repeat;
+  right: 640px;
+}
+
+.s-our-story {
+  text-align: left;
+  position: relative;
+  padding-left: 400px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.o-our-story_text {
+  max-width: 540px;
+  margin-bottom: 35px;
+  font-size: 14px;
+  font-family: $font-family-text;
+}
+@media screen and (max-width: 768px) {
+  .s-our-story {
+    padding-left: 0;
+    text-align: center;
+  }
+  .s-our-story::before {
+    display: none;
+  }
+  .o-our-story_text {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media screen and (max-width: 880px) {
+  .o-our-story_text  {
+    max-width: none;
+  }
+  .s-our-story::before {
+    right: 500px;
+  }
+}
